@@ -1,0 +1,18 @@
+{
+  "name": "meetingbytes-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for meeting summarisation with Whisper",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["chrome-extension", "whisper", "meeting-summary"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
+}

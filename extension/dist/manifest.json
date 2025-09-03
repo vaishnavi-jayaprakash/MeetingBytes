@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "MeetingBytes",
+  "version": "1.0.0",
+  "description": "Capture meeting audio and generate summaries using Whisper AI.",
+  "permissions": ["tabCapture", "storage", "scripting", "offscreen"],
+  "host_permissions": ["http://localhost:8000/*", "http://127.0.0.1:8000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*", "https://*.zoom.us/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {}
+}
